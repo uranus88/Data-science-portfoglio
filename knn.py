@@ -6,6 +6,9 @@
 #K is chosen by the user.
 #It is based on distances.
 
+#Here we load handwritten digits from a dataset. Then we train the model to recognise 
+#them using knn
+
 import numpy as np
 import sklearn
 import sklearn.datasets as ds
