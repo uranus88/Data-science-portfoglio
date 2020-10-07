@@ -31,6 +31,7 @@ for i in range(nrows):
 		ax.matshow(digits.images[k, ...], cmap = plt.cm.gray)
 		ax.set_axis_off()
 		ax.set_title(digits.target[k])
+plt.show()
 
 (X_train, X_test, y_train, y_test) = \
     ms.train_test_split(X, y, test_size=.25)
@@ -49,6 +50,6 @@ ax.imshow(one, interpolation='none',
 ax.grid(False)
 ax.set_axis_off()
 ax.set_title("One")
-
+plt.show()
 # We need to pass a (1, D) array.
 knc.predict(one.reshape((1, -1)))
